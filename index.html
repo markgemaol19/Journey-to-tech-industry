@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">TechCareer Exchange Survey</h1>
+
+  <p id="description">
+    This survey helps us understand your interests, challenges, and needs when getting into the tech industry.
+  </p>
+
+  <form id="survey-form">
+
+    <!-- Personal Information -->
+    <section>
+      <label id="name-label" for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <br><br>
+
+      <label id="email-label" for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <br><br>
+
+      <label id="number-label" for="number">Age (optional):</label><br>
+      <input type="number" id="number" name="age" min="3" max="103" placeholder="e.g. 18">
+    </section>
+
+    <br>
+
+    <!-- Question 1 -->
+    <section>
+      <label for="dropdown">
+        1. What is your current level of experience in the tech industry?
+      </label><br><br>
+
+      <select id="dropdown" name="experience">
+        <option value="" disabled selected>Select an option</option>
+        <option value="beginner">No experience / Beginner</option>
+        <option value="basic">Some basic knowledge or self-study</option>
+        <option value="entry">Entry-level experience</option>
+        <option value="professional">Professional experience</option>
+      </select>
+    </section>
+
+    <br><br>
+
+    <!-- Question 2 -->
+    <section>
+      <label>
+        2. What is your main reason for wanting to enter the tech industry?<br>
+        (Choose one)
+      </label><br><br>
+
+      <input type="radio" id="career" name="reason" value="career">
+      <label for="career">Career growth opportunities</label><br>
+
+      <input type="radio" id="high" name="reason" value="high">
+      <label for="high">Higher salary potential</label><br>
+
+      <input type="radio" id="personal" name="reason" value="personal">
+      <label for="personal">Personal interest in technology</label><br>
+
+      <input type="radio" id="job" name="reason" value="job">
+      <label for="job">Job flexibility (remote work, freelancing, etc.)</label>
+    </section>
+
+    <br><br>
+
+    <!-- Question 3 -->
+    <section>
+      <label>
+        3. What challenges do you face when trying to get into the tech industry?<br>
+        (You may choose <strong>multiple answers</strong>)
+      </label>
+
+      <ul>
+        <li>
+          <input type="checkbox" id="skills" name="challenges" value="skills">
+          <label for="skills">Lack of technical skills</label>
+        </li>
+        <li>
+          <input type="checkbox" id="where" name="challenges" value="where">
+          <label for="where">Not knowing where to start</label>
+        </li>
+        <li>
+          <input type="checkbox" id="limited" name="challenges" value="limited">
+          <label for="limited">Limited access to training or courses</label>
+        </li>
+        <li>
+          <input type="checkbox" id="financial" name="challenges" value="financial">
+          <label for="financial">Financial constraints</label>
+        </li>
+        <li>
+          <input type="checkbox" id="language" name="challenges" value="language">
+          <label for="language">Language barriers</label>
+        </li>
+        <li>
+          <input type="checkbox" id="mentorship" name="challenges" value="mentorship">
+          <label for="mentorship">Lack of mentorship or guidance</label>
+        </li>
+        <li>
+          <input type="checkbox" id="professional" name="challenges" value="professional">
+          <label for="professional">No professional network in tech</label>
+        </li>
+        <li>
+          <input type="checkbox" id="difficulty" name="challenges" value="difficulty">
+          <label for="difficulty">Difficulty finding entry-level jobs</label>
+        </li>
+      </ul>
+    </section>
+
+    <br>
+
+    <!-- Question 4 -->
+    <section>
+      <label for="comments">4. Comments and Suggestions</label>
+      <p>
+        Please share any comments, suggestions, or support you would like from TechCareer Exchange:
+      </p>
+
+      <textarea
+        id="comments"
+        name="comments"
+        rows="4"
+        cols="40"
+        placeholder="Enter your comments or suggestions here">
+      </textarea>
+    </section>
+
+    <br>
+
+    <button type="submit" id="submit">Submit</button>
+
+  </form>
+
+  <footer>
+    <p>Created by TechCareer Exchange</p>
+  </footer>
+
+</body>
+</html>
